@@ -46,12 +46,19 @@ public:
 
 int main() {
 
-    User user1("User", "User", "User@gmail.com");
+    User user1("User", "123", "User@gmail.com");
 
     cout << "Username: " << user1.username << endl;
-    cout << "Role: " << user1.getRole() << endl;
+    cout << "Role: " << user1.getRole() << endl << endl;
 
-    user1.setRole("Admin");
-    user1.login("User");
+    string role,pw;
+
+    cout << "Masukan Role (Admin/User) : ";
+    cin >> role;
+    cout << "Masukan Password : ";
+    cin >> pw;
+
+    user1.setRole(role);
+    user1.login(pw);
 
 }
