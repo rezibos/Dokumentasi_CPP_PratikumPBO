@@ -5,8 +5,6 @@ class User {
 private:
     string password;
     string role;
-
-protected:
     string email;
 
 public:
