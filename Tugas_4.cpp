@@ -43,14 +43,14 @@ int main()
         cout << "Masukan Jenis Kendaraan : ";
         cin >> jk;
     
-        Waktu waktumasuk = {rand()};
-        Kendaraan DataKendaraan(bp, jk, waktumasuk);
+        Waktu waktumasuk = {rand() % 6};
+        Kendaraan dataKendaraan(bp, jk, waktumasuk);
     
         cout << "\nApakah Mau menampilkan info kendaraan yang masuk (y/t) : ";
         cin >> yt;
     
         if(yt == "y"){
-            DataKendaraan.tampikan();
+            dataKendaraan.tampikan();
             cout << "\033[33mAnda Keluar Dari Aplikasi Parkir\n\033[0m";
             system("pause");
             break;
