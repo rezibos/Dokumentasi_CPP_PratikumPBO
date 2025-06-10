@@ -5,6 +5,7 @@
 #include <windows.h>
 #include <shlobj.h>
 #include <string>
+#include <windows.h>
 using namespace std;
 
 string RESET = "\033[0m";
@@ -121,7 +122,7 @@ private:
     int jumlahSpin = 0;
     int totalMenang = 0;
     char lanjut;
-    string simbols[6] = {"@", "#", "$", "%", "&", "*"};
+    string simbols[6] = {"😀", "😎", "🔥", "⭐", "💎", "🚀"};
 
 public:
     MesinSlot(string nama, int saldo) : Permainan(nama, saldo) {}
@@ -394,6 +395,7 @@ public:
 
 int main() {
     srand(time(0));
+    SetConsoleOutputCP(CP_UTF8);
     string nama;
     int saldoAwal, pilihan, tambahSaldo;
 

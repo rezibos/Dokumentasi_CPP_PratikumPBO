@@ -51,6 +51,8 @@
         "ctime": "cpp",
         "chrono": "cpp",
         "thread": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "locale": "cpp",
+        "format": "cpp"
     }
 }
