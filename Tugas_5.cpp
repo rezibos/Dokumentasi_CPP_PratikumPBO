@@ -112,8 +112,6 @@ public:
     int getSaldo() {
         return saldo;
     }
-
-    virtual ~Permainan() {}
 };
 
 class MesinSlot : public Permainan {
@@ -122,7 +120,7 @@ private:
     int jumlahSpin = 0;
     int totalMenang = 0;
     char lanjut;
-    string simbols[6] = {"😀", "😎", "🔥", "⭐", "💎", "🚀"};
+    string simbols[6] = {"🤑", "👾", "🔥", "⭐", "💎", "🚀"};
 
 public:
     MesinSlot(string nama, int saldo) : Permainan(nama, saldo) {}
