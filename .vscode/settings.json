@@ -53,6 +53,7 @@
         "thread": "cpp",
         "iomanip": "cpp",
         "locale": "cpp",
-        "format": "cpp"
+        "format": "cpp",
+        "cstdarg": "cpp"
     }
 }
